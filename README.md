@@ -35,6 +35,13 @@ O sistema conta com as operações básicas de um e-commerce (CRUD) e gerenciame
    git clone https://github.com/SEU-USUARIO/gellato.git
 3. Abra o painel do XAMPP e inicie os serviços Apache e MySQL.
 
+## 🗄️ Como importar o Banco de Dados
+
+1. Abra o phpMyAdmin (`http://localhost/phpmyadmin`).
+2. Crie um novo banco de dados com o nome `gellato`.
+3. Selecione o banco criado, vá até a aba **Importar**.
+4. Escolha o arquivo `gellato.sql` (localizado na raiz deste projeto) e clique em **Executar**.
+
 4. Importe o arquivo do banco de dados (caso exista um .sql no projeto) através do phpMyAdmin (http://localhost/phpmyadmin).
 
 5. Acesse o projeto no navegador: http://localhost/gellato.
