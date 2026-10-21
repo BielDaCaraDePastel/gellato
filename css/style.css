@@ -1,0 +1,159 @@
+/*
+   1. RESET E CONFIGURAÇÕES GERAIS
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f3e9;
+    color: #3e3428;
+}
+
+
+/*
+   2. CABEÇALHO E NAVEGAÇÃO
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #8c6b3f;
+    color: #fffaf0;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #fffaf0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*
+   3. VITRINE DE PRODUTOS
+*/
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    padding: 20px;
+    background: #fffdf8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(92, 69, 37, 0.12);
+    text-align: center;
+}
+
+.imagem {
+    font-size: 64px;
+}
+
+.preco {
+    margin: 10px 0;
+    color: #a67c35;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*
+   4. BOTÕES
+*/
+
+button {
+    padding: 10px 14px;
+    background: #b08d57;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.perigo {
+    background: #8b3a32;
+}
+
+
+/* 
+   5. CONTAINER PRINCIPAL
+*/
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/*
+   6. TABELAS
+*/
+
+table {
+    width: 100%;
+    margin: 15px 0;
+    background: #fffdf8;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e9dfce;
+    text-align: left;
+}
+
+th {
+    background: #eee2cc;
+}
+
+
+/*
+   7. CAMPOS DE FORMULÁRIO
+*/
+
+input,
+select {
+    margin: 4px 4px 4px 0;
+    padding: 9px;
+    border: 1px solid #d6c5a5;
+    border-radius: 6px;
+}
+
+
+/*
+   8. MENSAGENS DE FEEDBACK
+*/
+
+.msg {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.msg.ok {
+    background: #e7eee1;
+    color: #486342;
+}
+
+.msg.erro {
+    background: #f5e5df;
+    color: #8b3a32;
+}
+
+nav span { margin-left: 20px; }
+
+.duas-colunas { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.duas-colunas form { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+.duas-colunas input { display: block; width: 100%; margin: 8px 0; }
